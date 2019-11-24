@@ -10,6 +10,8 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/registroCss.css" rel="stylesheet" type="text/css"/>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="jscripts/registroJS.js" type="text/javascript"></script>
 
     </head>
     <body>
@@ -18,9 +20,9 @@ and open the template in the editor.
                 <p class="contact"><label for="name">Nombre</label></p>
                 <input id="nombre" name="nombre" placeholder="Nombre y Apellido" required="" tabindex="1" type="text">
                 <p class="contact"><label for="email">Correo</label></p>
-                <input id="nombre" name="email" placeholder="alumno@idat.edu.pe" required="" tabindex="2" type="email">
+                <input id="email" name="email" placeholder="alumno@idat.edu.pe" required="" tabindex="2" type="email">
                 <p class="contact"><label for="username">Ingrese Usuario</label></p>
-                <input id="nombre" name="usuario" placeholder="usuario" required="" tabindex="3" type="text">
+                <input id="usuario" name="usuario" placeholder="usuario" required="" tabindex="3" type="text">
                 <p class="contact"><label for="password">Cree un Password</label></p>
                 <input id="nombre" name="password" placeholder="Contarseña" required="" tabindex="4">
                 <fieldset>   
@@ -47,6 +49,15 @@ and open the template in the editor.
                     <label>Año<input id="año" class="birthday" maxlength="4" name="Año" placeholder="Dia" required="" tabindex="7"></label>
 
                 </fieldset>
+                <select class="select-style gender" name="genero" tabindex="8" id="genero">
+                     <option value="">Soy</option> 
+                     <option value="m">Hombre</option>
+                      <option value="f">Mujer</option>
+                       <option value="others">Otro</option>
+                    
+                    
+                </select>
+                
 
                 <br><br>
 
